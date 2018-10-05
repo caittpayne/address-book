@@ -1,0 +1,16 @@
+{
+  "name": "address-book",
+  "version": "1.0.0",
+  "description": "An application to model an address book in Node",
+  "main": "\u001b[C\u001b[C\u001b[C\u001bapp.js\u001b[C\u001b[\u001b[C\u001b[C",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "address",
+    "book",
+    "node"
+  ],
+  "author": "Cait Payne",
+  "license": "ISC"
+}

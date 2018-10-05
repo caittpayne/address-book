@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const dateFormat = require('dateformat');
 
 module.exports = class MenuController {
   constructor(){
@@ -9,6 +10,7 @@ module.exports = class MenuController {
         message: 'Please choose form an option below',
         choices: [
           'Add new contact',
+          'Get date',
           'Exit'
         ]
       }
@@ -22,6 +24,9 @@ module.exports = class MenuController {
       switch(response.mainMenuChoice){
         case 'Add new contact':
           this.addContact();
+          break;
+        case 'Get date':
+          this.getDate();
           break;
         case 'Exit':
           this.exit();
@@ -42,6 +47,14 @@ module.exports = class MenuController {
   addContact() {
     this.clear();
     console.log('addContact called');
+    this.main();
+  }
+
+  getDate(){
+    this.clear();
+    const now = new Date();
+    const date = dateFormat(now);
+    console.log(date);
     this.main();
   }
 

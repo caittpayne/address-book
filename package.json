@@ -14,6 +14,7 @@
   "author": "Cait Payne",
   "license": "ISC",
   "dependencies": {
+    "dateformat": "^3.0.3",
     "inquirer": "^5.1.0"
   }
 }

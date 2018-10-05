@@ -4,7 +4,7 @@
   "description": "An application to model an address book in Node",
   "main": "\u001b[C\u001b[C\u001b[C\u001bapp.js\u001b[C\u001b[\u001b[C\u001b[C",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "set NODE_ENV=test && jasmine"
   },
   "keywords": [
     "address",
@@ -16,5 +16,8 @@
   "dependencies": {
     "dateformat": "^3.0.3",
     "inquirer": "^5.1.0"
+  },
+  "devDependencies": {
+    "jasmine": "^3.1.0"
   }
 }
